@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="kb-testFlow" doc:id="6f494fb9-66fd-4d27-a9c3-1dd9d008e6ea" >
+		<scheduler doc:name="Scheduler" doc:id="31e04d7a-331c-4af9-901d-c97eb361d8d5" >
+			<scheduling-strategy >
+				<fixed-frequency frequency="10000"/>
+			</scheduling-strategy>
+		</scheduler>
+		<logger level="INFO" doc:name="Logger" doc:id="870aedd2-4203-4421-8f86-4797bfa88d12" message="1.0.1"/>
+	</flow>
+</mule>
